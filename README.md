@@ -1,58 +1,42 @@
-# Lumina Creative Studio — Premium Website + Admin CMS
+# Lumina Creative Studio
 
-A functional sample business website and CMS built from the supplied MASTER PROMPT. Lumina Creative Studio is intentionally fictional so real business facts, client logos, testimonials, awards, and metrics are not fabricated.
+A premium fictional business website built as a simple **HTML + CSS + JavaScript** project.
 
-## Stack
-- Node.js + Express
-- SQLite via better-sqlite3
-- EJS server-rendered frontend/admin UI
-- Express session authentication
-- bcrypt password hashing
-- Helmet security headers
-- Rate limiting on authentication/public forms
-- Multer image upload handling
-- Nodemailer-ready transactional email integration
+## No Node.js required
 
-## Included
-- Premium responsive public website
-- Home, About, Services, Service detail, Work, Blog, Blog detail, Contact, Booking, 404
-- Admin dashboard
-- Authentication and roles: owner, administrator, editor
-- Pages CMS with draft/published status and SEO metadata
-- Services CRUD
-- Blog CRUD with draft/publish and SEO fields
-- Media library with image uploads and alt text
-- Lead management and statuses/notes
-- Booking management and statuses
-- Central site settings
-- User management
-- Global admin search
-- Dynamic sitemap.xml and robots.txt
-- Public forms stored in SQLite
-- Optional SMTP notification structure
-- Reduced-motion support
-- Mobile admin layout
+There is no Express server, database, npm install, or build step in the new version.
 
-## Run locally
-1. Install Node.js 18+.
-2. Copy `.env.example` to `.env`.
-3. Set a strong `SESSION_SECRET`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD`.
-4. Run `npm install`.
-5. Run `npm start`.
-6. Open `http://localhost:3000`.
-7. Open `http://localhost:3000/admin/login` for the CMS.
+### Open locally
 
-The database is created automatically at `data/lumina.db` on first run.
+Simply open `index.html` in a browser, or use VS Code with the Live Server extension.
 
-## Demo defaults
-If no environment variables are supplied:
-- Email: `admin@lumina.local`
-- Password: `ChangeMe123!`
+## Structure
 
-Change these before any real deployment.
+- `index.html` — homepage
+- `about.html` — studio story and values
+- `services.html` — service offerings
+- `work.html` — fictional case studies
+- `blog.html` — sample insights
+- `contact.html` — inquiry form
+- `booking.html` — consultation booking form
+- `css/style.css` — public website styling
+- `js/main.js` — public interactions
+- `admin/` — browser-based sample CMS
+- `css/admin.css` — CMS styling
+- `js/admin.js` — CMS interactions
 
-## Email
-Set SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM, and ADMIN_EMAIL to enable admin email notifications for new leads/bookings.
+## Sample CMS
 
-## Production hardening still required
-Before deploying to a public production environment, add HTTPS, a persistent session store, secure cookie settings, a reverse proxy, stronger CSRF protection for the chosen deployment architecture, backups, monitoring, image optimization/CDN, and a real transactional email provider. The application is a substantial functional sample foundation, not a claim that every production infrastructure control has been provisioned in this sandbox.
+The admin area uses browser `localStorage` so it works without a backend. Contact inquiries and booking requests can be viewed from the Leads section.
+
+Open `admin/login.html` and use any values to enter the demo CMS.
+
+## Deployment
+
+This version is suitable for static hosting such as GitHub Pages, Vercel static hosting, Netlify, or any normal web server.
+
+## Important
+
+This is a frontend CMS demo, not a production multi-user CMS. A real production backend/database can be connected later without replacing the visual frontend.
+
+Lumina Creative Studio is fictional. Client names, projects, testimonials, awards, and metrics shown in the sample are explicitly fictional/sample content.
