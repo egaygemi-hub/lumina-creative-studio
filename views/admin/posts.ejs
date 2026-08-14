@@ -1,1 +1,0 @@
-<%- include('layout-head',{title:'Blog — Lumina'}) %><div class="page-title"><h1>Blog</h1><p>Blog CMS foundation.</p></div><div class="panel"><table><tr><th>Title</th><th>Category</th><th>Status</th></tr><% posts.forEach(p=>{ %><tr><td><%= p.title %></td><td><%= p.category %></td><td><%= p.status %></td></tr><% }) %></table></div><%- include('layout-foot') %>
