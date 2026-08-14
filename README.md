@@ -1,42 +1,39 @@
 # Lumina Creative Studio
 
-A premium fictional business website built as a simple **HTML + CSS + JavaScript** project.
+Premium sample business website built as a static frontend.
 
-## No Node.js required
+## Stack
 
-There is no Express server, database, npm install, or build step in the new version.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Browser localStorage for the demo admin/CMS interactions
+- No Node.js
+- No npm
+- No Express
+- No SQLite
+- No EJS
 
-### Open locally
+## Run locally
 
-Simply open `index.html` in a browser, or use VS Code with the Live Server extension.
+Open `index.html` directly in a browser, or use VS Code Live Server.
 
-## Structure
+## Deploy
 
-- `index.html` — homepage
-- `about.html` — studio story and values
-- `services.html` — service offerings
-- `work.html` — fictional case studies
-- `blog.html` — sample insights
-- `contact.html` — inquiry form
-- `booking.html` — consultation booking form
-- `css/style.css` — public website styling
-- `js/main.js` — public interactions
-- `admin/` — browser-based sample CMS
-- `css/admin.css` — CMS styling
-- `js/admin.js` — CMS interactions
+This repository is configured as a static site for Vercel. There is no build command and no server runtime required.
 
-## Sample CMS
+## Pages
 
-The admin area uses browser `localStorage` so it works without a backend. Contact inquiries and booking requests can be viewed from the Leads section.
+- Home
+- About
+- Services
+- Work
+- Insights
+- Contact
+- Booking
 
-Open `admin/login.html` and use any values to enter the demo CMS.
+## Admin demo
 
-## Deployment
+The `/admin/` pages provide a frontend-only CMS demonstration. Data is stored in the browser using localStorage and is not a secure multi-user production CMS.
 
-This version is suitable for static hosting such as GitHub Pages, Vercel static hosting, Netlify, or any normal web server.
-
-## Important
-
-This is a frontend CMS demo, not a production multi-user CMS. A real production backend/database can be connected later without replacing the visual frontend.
-
-Lumina Creative Studio is fictional. Client names, projects, testimonials, awards, and metrics shown in the sample are explicitly fictional/sample content.
+Lumina Creative Studio is a fictional sample brand.
